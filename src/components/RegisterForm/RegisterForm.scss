@@ -1,0 +1,49 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 24px;
+        align-self: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: black;
+    }
+
+    &__description {
+        margin: 0;
+        margin-bottom: 24px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__inputs {
+        margin-bottom: 24px;
+
+        & div:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__button {
+        padding: 16px;
+        background-color: #67A5EB;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: white;
+        border: none;
+        border-radius: 28px;
+
+        &:hover {
+            color: #FFFFFF80;
+            background-color: #45526E;
+            cursor: pointer;
+        }
+    }
+}

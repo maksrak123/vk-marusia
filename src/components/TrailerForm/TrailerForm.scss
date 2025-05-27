@@ -1,0 +1,30 @@
+.trailer {
+    width: 1104px;
+    height: 540px;
+    box-sizing: border-box;
+    padding: 0 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    &__player {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.ytp-chrome-top,
+.ytp-show-cards-title {
+    display: none !important;
+}
+
+@media (max-width: 400px) {
+    .trailer {
+        width: 375px;
+        height: 212px;
+        padding: 0;
+        z-index: 1000;
+    }
+}

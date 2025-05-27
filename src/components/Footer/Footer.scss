@@ -1,0 +1,50 @@
+.footer {
+    margin: 0 auto;
+    padding: 24px 80px;
+    max-width: 1280px;
+
+    &__list {
+        margin: 0;
+        display: flex;
+        justify-self: flex-end;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+
+    &__link {
+
+        &:hover svg path,
+        &:focus svg path {
+            fill: #9747FF;
+        }
+
+        &:hover svg rect,
+        &:focus svg rect {
+            stroke: #9747FF;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        padding: 24px 20px;
+        max-width: 400px;
+
+        &__list {
+            justify-self: flex-start;
+            margin-bottom: 7px;
+        }
+
+        &__link svg,
+        &__link svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

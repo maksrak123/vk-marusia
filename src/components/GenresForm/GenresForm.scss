@@ -1,0 +1,99 @@
+.genres {
+    margin: 0 auto;
+    padding: 63px 80px;
+    max-width: 1280px;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 65px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: #FFFFFF;
+    }
+
+    &__list {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 290px;
+        height: 304px;
+        background-color: #0A0B0B;
+        border-radius: 24px;
+        border: 1px solid #FFFFFF40;
+        box-shadow: 0 0 80px #FFFFFF54;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(-n + 16) {
+            margin-bottom: 64px;
+        }
+
+        & span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 70px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+            border-bottom-right-radius: 24px;
+            border-bottom-left-radius: 24px;
+        }
+
+        & img {
+            width: 100%;
+            height: 220px;
+            border-top-right-radius: 24px;
+            border-top-left-radius: 24px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .genres {
+        padding: 24px 20px;
+        max-width: 400px;
+
+        &__title {
+            margin-bottom: 40px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__item {
+            width: 335px;
+            height: 304px;
+            border-radius: 24px;
+            margin-bottom: 24px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+
+            &:nth-child(-n + 16) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

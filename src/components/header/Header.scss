@@ -1,0 +1,140 @@
+.header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 24px 80px;
+    max-width: 1280px;
+
+    &__navigate {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 78px;
+        text-decoration: none;
+    }
+
+    &__link {
+        margin-right: 40px;
+        font-size: 24px;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: #B4A9FF;
+        }
+
+        &:focus {
+            border-bottom: 1.5px solid #DC5DFC;
+        }
+
+        &--media {
+            display: none;
+            margin-right: 0;
+
+            &:hover svg path {
+                fill: #B4A9FF;
+            }
+        }
+    }
+
+    &__button {
+        border: none;
+        outline: none;
+        font-size: 23px;
+        color: white;
+        text-decoration: none;
+        background-color: inherit;
+
+        &:hover {
+            color: #B4A9FF;
+            cursor: pointer;
+        }
+
+        &:focus {
+            border-bottom: 1.5px solid #DC5DFC;
+        }
+
+        &--media {
+            display: none;
+            background-color: inherit;
+            border: none;
+            height: 24px;
+            padding: 0;
+        }
+    }
+
+    &__search-wrapper {
+        display: flex;
+        margin-right: 74px;
+        max-height: 48px;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &--media {
+            display: none;
+            margin-right: 20px;
+        }
+    }
+
+    &__dropdown-container {
+        margin-top: 12px;
+        position: relative;
+    }
+
+    &__search--button {
+        background-color: inherit;
+        border: none;
+
+        & svg path {
+            fill-opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 20px 20px;
+        padding-bottom: 8px;
+        max-width: 335px;
+
+        &__navigate {
+            margin-right: 17px;
+        }
+
+        &__logo {
+            margin-right: 142px;
+        }
+
+        &__logo img {
+            width: 80px;
+            height: 18px;
+        }
+
+        &__link {
+            display: none;
+
+            &--media {
+                display: block;
+            }
+        }
+
+        &__search-wrapper {
+            display: none;
+
+            &--media {
+                display: block;
+                margin-right: 15px;
+            }
+        }
+
+        &__button {
+            display: none;
+
+            &--media {
+                display: block;
+            }
+        }
+    }
+}

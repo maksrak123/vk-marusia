@@ -1,0 +1,116 @@
+.top10 {
+    margin: 0 auto;
+    padding: 24px 80px;
+    padding-top: 10px;
+    margin-bottom: 84px;
+    max-width: 1280px;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+    &__list {
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 40px;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        width: 224px;
+        height: 336px;
+        text-decoration: none;
+    }
+
+    &__item {
+        &:nth-child(-n + 5) {
+            margin-bottom: 24px;
+        }
+
+        & span {
+            position: absolute;
+            padding: 8px 24px;
+            top: -9px;
+            left: -12px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: #6A5DC2;
+            background-color: #FFFFFF;
+            border-radius: 24px;
+            z-index: 100;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            box-shadow: 0 0 80px #FFFFFF54;
+            border: 1px solid #FFFFFF40;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .top10 {
+        padding: 32px 0;
+        margin-bottom: 0;
+        max-width: 400px;
+
+        &__title {
+            padding-left: 20px;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+
+        &__list {
+            margin: 0;
+            width: 335px;
+            flex-wrap: nowrap;
+            padding-top: 32px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x proximity;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        &__item {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            box-shadow: 0 0 32px #FFFFFF54;
+
+            &:first-child {
+                padding-left: 20px;
+            }
+
+            &:nth-child(5n) {
+                margin-right: 40px;
+            }
+
+            &:nth-child(-n + 5) {
+                margin-bottom: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            & img {
+                box-shadow: none;
+            }
+
+            & span {
+                top: -12px;
+            }
+        }
+    }
+}

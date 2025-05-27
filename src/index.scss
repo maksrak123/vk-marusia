@@ -1,0 +1,29 @@
+#root {
+    background-image: linear-gradient(to bottom, #67A5EB, #A393F5, white), linear-gradient(to bottom, #272424, #413f3f);
+    background-blend-mode: multiply;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: "Play";
+    src: url("Play-Regular"), url("../src/fonts/PlayRegular.woff"),
+      url("../fonts/PlayRegular.woff2") format("woff2"),
+      url("../fonts/PlayRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: "Play";
+    src: url("Play-Bold"), url("../src/fonts/PlayBold.woff"),
+      url("../fonts/PlayBold.woff2") format("woff2"),
+      url("../fonts/PlayBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+  
+* {
+    font-family: "Play", sans-serif;
+}

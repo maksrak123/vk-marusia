@@ -1,0 +1,117 @@
+.setting {
+    margin: 0 auto;
+    margin-bottom: 361px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 47px 80px;
+    max-width: 1280px;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__user:first-child {
+        margin-bottom: 40px;
+    }
+
+    &__user {
+        display: flex;
+        margin-bottom: 64px;
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-right: 16px;
+        height: 60px;
+        width: 60px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        background-color: #FFFFFF80;
+        border-radius: 30px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    &__name {
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+    &__button {
+        padding: 16px 48px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        border-style: none;
+        border-radius: 28px;
+        background-color: #67A5EB;
+        color: white;
+
+        &:hover {
+            color: #FFFFFF80;
+            background-color: #45526E;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .setting {
+        margin-bottom: 189px;
+        padding: 44px 20px;
+        max-width: 400px;
+
+        &__list {
+            margin-bottom: 40px;
+        }
+
+        &__user {
+            margin-bottom: 64px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__img {
+            margin-right: 16px;
+            height: 48px;
+            width: 48px;
+        }
+
+        &__title {
+            margin-bottom: 4px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF80;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__button {
+            width: 100%;
+        }
+    }
+}

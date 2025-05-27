@@ -1,0 +1,146 @@
+.films {
+    margin: 0 auto;
+    padding: 24px 80px;
+    margin-bottom: 139px;
+    max-width: 1280px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        padding-top: 39px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        text-decoration: none;
+        color: #FFFFFF;
+
+        &:hover,
+        &:focus {
+            color: #9747FF;
+            cursor: pointer;
+        }
+
+        &:hover svg path,
+        &:focus svg path {
+            fill: #9747FF;
+        }
+    }
+
+    &__icon {
+        padding: 9.01px 13.01px;
+        margin-right: 15px;
+    }
+
+    &__list {
+        margin: 0;
+        margin-top: 64px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        height: inherit;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        margin-bottom: 64px;
+        box-sizing: border-box;
+        width: 224px;
+        height: 336px;
+        border-radius: 24px;
+        border: 1px solid #FFFFFF40;
+        box-shadow: 0 0 80px #FFFFFF54;
+
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+
+        &:nth-last-child(-n+5) {
+            margin-bottom: 0;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 24px;
+        }
+    }
+
+    &__more {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        padding: 16px 48px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 28px;
+        color: #FFFFFF;
+        border: none;
+        background-color: #67A5EB;
+
+        &:hover {
+            color: #FFFFFF80;
+            background-color: #45526E;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .films {
+        padding: 24px 20px;
+        max-width: 400px;
+        margin-bottom: 0;
+
+        &__title {
+            margin-bottom: 40px;
+            padding-top: 0;
+            font-size: 24px;
+            line-height: 32px;
+
+            & svg {
+                width: 10px;
+                height: 17px;
+            }
+        }
+
+        &__list {
+            margin: 0;
+        }
+
+        &__item {
+            margin-right: 0;
+            margin-bottom: 24px;
+            width: 335px;
+            height: 502px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:nth-last-child(-n+5) {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__icon {
+            padding: 7.5px 10px;
+            margin-right: 8px;
+        }
+
+        &__button {
+            width: 100%;
+            background-color: #6A5DC2;
+        }
+    }
+}
